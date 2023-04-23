@@ -2,9 +2,6 @@
 import os
 import csv
 
-# Set path for file
-# csvpath = "\Activities\09-Stu_ReadComicBooksCSV\Resources\comic_books.csv"
-
 csvpath = os.path.join("Resources", "budget_data.csv")
 
 totalMonths = 0
