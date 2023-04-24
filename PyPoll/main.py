@@ -39,3 +39,15 @@ for i in candidates:
         winner = candidates[f'{i}'][0]
 print(f"Winner: {chickenDinner}")
 print("-------------------------")
+
+#write to a text file
+with open("analysis\election_results.txt", 'w') as file:
+    print("Election Results", file=file)
+    print("-------------------------", file=file)
+    print(f"Total Votes: {totalVotes}", file=file)
+    print("-------------------------", file=file)
+    for i in candidates:
+        print(f"{i}: {round(candidates[f'{i}'][1]*100,3)}% ({candidates[f'{i}'][1]})", file=file)
+    print("-------------------------", file=file)
+    print(f"Winner: {chickenDinner}", file=file)
+    print("-------------------------", file=file)
